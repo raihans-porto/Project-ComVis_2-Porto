@@ -17,7 +17,7 @@ Adapun dataset yang digunakan dalam menyelesaikan proyek ini dapat dilihat pada 
 | Usability | 6.88 |
 
 ## 3. Preview Gambar
-- Adapun 12 kelas yang dipilih dalam pengerjaan project dapat dilihat gambarnya dibawah:
+- Adapun 12 dari 101 kelas yang dipilih dalam pengerjaan project dapat dilihat gambarnya dibawah:
 <img width="863" height="989" alt="Untitled" src="https://github.com/user-attachments/assets/1434925c-346d-4387-a678-33a8a8ad7e86" />
 
 ## 4. Model Evaluasi
