@@ -42,7 +42,7 @@ Teknik augmentasi gambar diterapkan langsung sebagai bagian dari arsitektur mode
 - *RandomTranslation* (10%)
 
 **4.4. 🏗️ Arsitektur Head Model**  
-Struktur tambahan setelah feature extraction:  
+Struktur tambahan setelah feature extraction yang digunakan pada fine-tuning:  
 - GlobalAveragePooling2D  
 - Dense (256 unit, aktivasi ReLU)  
 - Dropout (rate 0.5)  
@@ -51,7 +51,7 @@ Struktur tambahan setelah feature extraction:
 
 **4.5. ⚙️ Kompilasi Model**  
 - Optimizer: Adam  
-- Learning rate: 0.0001  
+- Learning rate: 0.0001 (feature extraction) dan 0.00001 (fine-tuning)  
 - Loss: SparseCategoricalCrossentropy  
 - Metrik: Accuracy
 
