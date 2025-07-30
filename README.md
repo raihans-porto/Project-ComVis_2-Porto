@@ -17,9 +17,8 @@ Adapun dataset yang digunakan dalam menyelesaikan proyek ini dapat dilihat pada 
 | Usability | 6.88 |
 
 ## 3. Preview Gambar
-- Adapun 10 kelas yang dipilih dalam pengerjaan project dapat dilihat gambarnya dibawah:
-<img width="937" height="989" alt="Untitled" src="https://github.com/user-attachments/assets/3e4125fd-0386-4e26-8575-e33a5d6141ef" />
-
+- Adapun 12 kelas yang dipilih dalam pengerjaan project dapat dilihat gambarnya dibawah:
+<img width="863" height="989" alt="Untitled" src="https://github.com/user-attachments/assets/1434925c-346d-4387-a678-33a8a8ad7e86" />
 
 ## 4. Model Evaluasi
 
@@ -61,7 +60,7 @@ Struktur model ditampilkan dengan `model.summary()` untuk melihat total paramete
 
 ### b. Grafik Akurasi dan Loss 
 
-![image](https://github.com/user-attachments/assets/ac997c09-d44f-43f8-ba2f-cf395085e5af)
+<img width="567" height="455" alt="Untitled" src="https://github.com/user-attachments/assets/6d5a8bae-fa8a-4a37-a8e2-39fe43572f7b" />
 
 
 | Epoch | Loss   | Accuracy | Val Loss | Val Accuracy |
@@ -75,38 +74,3 @@ Struktur model ditampilkan dengan `model.summary()` untuk melihat total paramete
 | 7/10  | 0.0539 | 0.9842   | 0.1261   | 0.9661       |
 
 ![image](https://github.com/user-attachments/assets/769be769-8147-42cb-875b-0fcd7fef6e83)
-
-
-#### c. Prediction (Inference)
-![image](https://github.com/user-attachments/assets/8f95b582-4e38-4ad9-a815-977d355b2643)
-
-
-- Insight:
-    - Berdasarkan hasil inference, terlihat bahwa dari 7 kelas yang diprediksi, model berhasil mengklasifikasikan semua gambar dengan benar.
-
-    - Hal ini menunjukkan bahwa model telah mampu membedakan gambar makanan dari masing-masing kelas. Secara keseluruhan performa model sangat baik, dengan akurasi mencapai 95% pada data training, validation, maupun testing.
-
-
-### E. Cara Melakukan Inference
-- Inference Menggunakan TensorFlow Serving.
-  - Siapkan docker dekstop
-  - Jalan command berikut pada terminal
-  ```
-  docker pull tensorflow/serving
-  ```
-- Install TensorFlow Serving Python API
-    ```
-    pip install tensorflow-serving-api
-    ```
-- Jalan command berikut pada terminal, ubah `YOUR_PATH`
-    ```
-    docker run -it -v YOUR_PATH\saved_model:/models -p 8501:8501 --entrypoint /bin/bash tensorflow/serving
-    ```
-- Jalan command berikut pada terminal
-    ```
-    tensorflow_model_server --rest_api_port=8501 --model_name=klasifikasi_model --model_base_path=/models/saved_model/
-    ```
-- Buka URL berikut pada browser untuk memastikan model berjalan
-    ```
-    http://localhost:8501/v1/models/klasifikasi_model
-    ```
