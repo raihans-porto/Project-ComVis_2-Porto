@@ -64,4 +64,7 @@ Struktur model ditampilkan dengan `model.summary()` untuk melihat total paramete
 <img width="567" height="455" alt="Untitled-1" src="https://github.com/user-attachments/assets/533ae8da-2e39-4625-a708-9542d8a96d4c" />
 
 ## 4.3 Performa Model berdasarkan Metrik Akurasi, Precision, Recall, dan Loss
+Model EfficientNet-B0 yang digunakan untuk prediksi pada dataset Food Vision 101 menunjukkan performa yang cukup baik dengan akurasi sebesar 73,7%, precision 73,8%, recall 73,7%, dan F1-score 73,4%. Nilai-nilai metrik ini relatif seimbang, yang menandakan model tidak terlalu bias terhadap kelas tertentu dan mampu memberikan prediksi yang cukup stabil secara umum. Namun, karena tugas klasifikasi makanan mencakup 101 kelas dengan kemiripan visual tinggi antar makanan, skor ini masih tergolong sedang dan menunjukkan ruang yang cukup besar untuk perbaikan.
+
+<img width="528" height="102" alt="image" src="https://github.com/user-attachments/assets/744b633d-cf44-42b6-ac99-61879a4ec2f5" />
 
